@@ -44,6 +44,7 @@ export const useGameState = () => {
     const winner = calculateWinner(current)
 
     const handleClick = (square: number) => {
+        console.log('click')
         const history = gameState.history.slice(0, gameState.step + 1)
         const boardState = history[history.length - 1]
 
